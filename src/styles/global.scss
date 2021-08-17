@@ -1,0 +1,111 @@
+h5 {
+  font-family: 'Amatic';
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /*now 1rem is 10px*/
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--dark);
+  font-size: 1.6rem;
+  width: 100vw;
+  margin: 0;
+}
+
+h2, h3{
+  font-family: var(--headings);
+  line-height: 1.5;
+}
+h2{
+  font-size: 2.7em;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 1.5em;
+  color: var(--purple);
+}
+
+p{
+  font-family: var(--text);
+  line-height: 2;
+  max-width: 100%;
+}
+
+ul{
+  padding-left: 0;
+}
+li::marker{
+  color: var(--purple);
+}
+main{
+  position: relative;
+  z-index: 1;
+}
+
+section{
+  position: relative;
+  margin-bottom: 15vh;
+}
+
+  .elipse{
+    position: absolute;
+    z-index: -10;
+  }
+
+  @media screen 
+and (min-device-width: 1200px)  
+and (-webkit-min-device-pixel-ratio: 1) { 
+  h1, h2{
+    font-size: 86px;
+  }
+
+  h3{
+    font-size: 42px;
+    max-width: 60vw;
+  }
+
+  p{
+    max-width: 40vw;
+    font-size: 18px;
+  }
+
+  section{
+    position: relative;
+    margin-bottom: 25vh;}
+}
+  
+  /* __________________________________________________CONTAINERS */
+
+  .container{
+    width: 100vw;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+
+  .text_container{
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+@media screen 
+and (min-device-width: 1200px)  
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+  .text_container{
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+@media screen 
+and (min-device-width: 1400px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+  .text_container{
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

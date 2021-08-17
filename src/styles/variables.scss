@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: "Amatic";
+    src: url("../fonts/AmaticSC-Regular.ttf");
+    };
+
+ /* ____________________________ COLORS */
+ $bg-color: #ececec;
+ $white: #FFFFFF;
+ $dark: #232323;
+ $pink: #F1D9E9;
+ $purple: #5C449B;
+
+ /* _____________________________FONTS */
+$headings:'Lora', serif;
+$text: 'Open Sans', sans-serif;
+$nav-font: 'Roboto', sans-serif;

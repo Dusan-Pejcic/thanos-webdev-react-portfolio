@@ -1,0 +1,108 @@
+/* __________________________________________MISSION section */
+.mission {
+    margin-top: 30vh;
+  }
+  .mission-ul {
+      padding-left: 5vw;
+    }
+    
+    .mission-elipse-purple{
+      width: 60px;
+      left: 70%;
+      margin-top: -120px;
+      z-index: -9;
+    }
+    
+    .mission-elipse-pink {
+      width: 90px;
+      left: 70%;
+      top: 80vh;
+      z-index: -9;
+    }
+    
+    .mission-elipse-white {
+      width: 200vw;
+      left: -50vh;
+    }
+    
+    .mission span {
+      margin-bottom: 20px;
+    }
+    
+    .dark-mission {
+      width: 100%;
+      background-color: transparent;
+    }
+   
+    p.dark {
+      font-weight: 600;
+      color: var(--dark);
+    }
+  
+    .why-elipse-white-small{
+      width: 120px;
+      left: 55vw;
+      top: -50px;
+    }
+    
+    .why-elipse-purple{
+      width: 120px;
+      left: 55vw;
+      top: 90vh;
+      z-index: -9;
+    }
+  
+    @media screen 
+  and (min-device-width: 1200px)  
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .mission {
+      margin-top: 10vh;
+    }
+    .mission-elipse-purple{
+      width: 120px;
+    }
+  
+    .mission-elipse-pink {
+      width: 150px;
+      left: 80%;
+      top: 60vh;
+      z-index: -9;
+    }
+  
+    .why-elipse-white-small{
+      width: 200px;
+      left: 60vw;
+      top: -50px;
+    }
+    .mission-elipse-white{
+      width: 150vw;
+      left: -60vw;
+      top: -30vh;
+    } 
+    .mission-ul{
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 40px;
+    }
+    .first-p{
+      padding-top: 0;
+      margin-top: 0;
+    }
+  
+    .dark-mission{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 30px;
+      width: 95%;
+      height: 25vh;
+      background-color: var(--dark);
+    }
+   
+    p.dark{
+      width: 40%;
+      font-weight: 300;
+      color: white;
+      font-family: lora;
+    }
+  }

@@ -1,0 +1,78 @@
+/*  ______________________________________________________________SECTION ONE section */
+.hero-text {
+    font-family: var(--headings);
+    line-height: 1.5;
+    font-size: 3.7em;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  
+  .hero-h1 {
+    font-family: var(--text);
+    line-height: 2;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  
+  .hero{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .hero-image-container{
+    margin-top: 10vh;
+  }
+  
+  .thanos-illustration{
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-section-elipse{
+    width: 260vw;
+    top: -15vh;
+    left: -50vw;
+  }
+  
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  
+    .hero-section-elipse{
+      width: 100vw;
+      top: -50vh;
+      left: 10vw;
+    }
+  
+    .hero-image-and-text-container{
+      width: 960px;
+      margin: 5vh auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .hero-image-container{
+      flex: 3;
+      order: 2;
+    }
+  
+    .text_container{
+      flex: 2;
+      order: 1;
+    }
+  
+   .thanos-illustration{
+    
+   }
+  }
+  @media screen 
+      and (min-device-width: 1400px) 
+      and (-webkit-min-device-pixel-ratio: 1){
+        .hero-image-and-text-container{
+          width: 1200px;
+          
+        }
+      }

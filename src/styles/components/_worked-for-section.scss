@@ -1,0 +1,71 @@
+/* _______________________________________________WORKED FOR section */
+
+.worked-for-elipse-white{
+    width: 300vw;
+    top: -30vh;
+    left: -100vw;
+  }
+  
+  .worked-for-elipse-purple{
+    width: 70px;
+    left: 10px;
+    top: 150vh;
+  
+    z-index: -9;
+  
+  }
+  
+  .worked-for-elipse-pink{
+    width: 120px;
+    right: 10px;
+    top: 70vh;
+  
+    z-index: -9;
+  }
+  
+  .worked-for-logo-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .client-logo{
+    width: 40%;
+    margin-bottom: 60px;
+  }
+
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .worked-for-elipse-white{
+      width: 100vw;
+      top: -30vh;
+      left: 20vw;
+    }
+
+    .worked-for-elipse-purple{
+      width: 250px;
+      left: 750px;
+      top: 200vh;
+    
+      z-index: -9;
+    
+    }
+    
+    .worked-for-elipse-pink{
+      width: 320px;
+      right: 200px;
+      top: 130vh;
+    
+      z-index: -9;
+    }
+    .worked-for-logo-container{
+      width: 50%;
+      padding-top: 10vh;
+    }
+    .client-logo{
+      width: 28%;
+      margin-bottom: 60px;
+    }
+  }
