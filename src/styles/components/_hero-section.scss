@@ -1,6 +1,6 @@
 /*  ______________________________________________________________SECTION ONE section */
 .hero-text {
-    font-family: var(--headings);
+    font-family: $headings;
     line-height: 1.5;
     font-size: 3.7em;
     font-weight: 700;
@@ -8,7 +8,7 @@
   }
   
   .hero-h1 {
-    font-family: var(--text);
+    font-family: $text;
     line-height: 2;
     max-width: 100%;
     font-size: 18px;

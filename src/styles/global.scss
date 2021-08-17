@@ -7,15 +7,15 @@ html{
 }
 
 body{
-  background-color: var(--bg-color);
-  color: var(--dark);
+  background-color: $bg-color;
+  color: $dark;
   font-size: 1.6rem;
   width: 100vw;
   margin: 0;
 }
 
 h2, h3{
-  font-family: var(--headings);
+  font-family: $headings;
   line-height: 1.5;
 }
 h2{
@@ -25,11 +25,11 @@ h2{
 
 h3{
   font-size: 1.5em;
-  color: var(--purple);
+  color: $purple;
 }
 
 p{
-  font-family: var(--text);
+  font-family: $text;
   line-height: 2;
   max-width: 100%;
 }
@@ -38,7 +38,7 @@ ul{
   padding-left: 0;
 }
 li::marker{
-  color: var(--purple);
+  color: $purple;
 }
 main{
   position: relative;

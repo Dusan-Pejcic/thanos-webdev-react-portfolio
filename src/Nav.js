@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import logoElipses from './img/logos/logo-elipses.png';
 
 const Nav = () => {
     return ( 
         <nav className="main-nav">
             <div className="nav-and-logo-container"> 
                 <div className="logo-container">
-                    <img className="logo-elipses" src="./img/logos/logo-elipses.png" alt=""/>
+                    <img className="logo-elipses" src={logoElipses} alt=""/>
                     <p className="logo-text">Built by Thanos</p>
                     {/* <i className="fas fa-bars hamburger"></i> */}
                 </div>

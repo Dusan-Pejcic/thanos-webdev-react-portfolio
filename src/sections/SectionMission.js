@@ -15,7 +15,7 @@ const SectionMission = () => {
           web and technology.
         </h2>
 
-        <h3>Some of the reasons someone might contact me are:</h3>
+        <h3 id="services">Some of the reasons someone might contact me are:</h3>
 
         <ul className="mission-p mission-ul">
           <li><p className='first-p'>e-shop site setup.</p></li>
