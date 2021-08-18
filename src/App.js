@@ -4,11 +4,13 @@ import About from './About'
 import Footer from './Footer'
 
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import SlideNav from './components/SlideNav';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <SlideNav  /> 
         <Nav />
           <main>
             <Switch>

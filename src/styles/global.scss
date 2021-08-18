@@ -1,12 +1,14 @@
-h5 {
-  font-family: 'Amatic';
-}
+
 html{
   box-sizing: border-box;
   font-size: 62.5%; /*now 1rem is 10px*/
 }
 
+.App {
+  position: relative;
+}
 body{
+  font-family: $text;
   background-color: $bg-color;
   color: $dark;
   font-size: 1.6rem;
@@ -28,6 +30,10 @@ h3{
   color: $purple;
 }
 
+h5 {
+  font-family: 'Amatic';
+}
+
 p{
   font-family: $text;
   line-height: 2;
@@ -36,6 +42,7 @@ p{
 
 ul{
   padding-left: 0;
+  margin: 0;
 }
 li::marker{
   color: $purple;

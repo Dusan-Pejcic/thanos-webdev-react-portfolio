@@ -1,6 +1,6 @@
 
 import logoElipses from './img/logos/logo-elipses.png';
-import NavList from './NavList';
+import NavList from './components/NavList';
 
 const Nav = () => {
     return ( 
