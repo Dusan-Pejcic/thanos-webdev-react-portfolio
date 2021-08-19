@@ -11,13 +11,13 @@ const NavList = () => {
         <Link to="/about">about</Link>
       </li>
       <li>
-        <a href="#">services</a>
+        <Link to="/">services</Link>
       </li>
       <li>
-        <a href="#">FAQs</a>
+        <Link to="/">faq</Link>
       </li>
       <li>
-        <a href="#">contact</a>
+        <Link to="/">contact</Link>
       </li>
     </ul>
   );
