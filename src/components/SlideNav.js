@@ -10,7 +10,7 @@ const SlideNav = () => {
     return ( 
         <div className="slide-nav-container">
             <div className={ menuOpen ? "slide-nav-list-container" : "slide-nav-list-container slide-nav-opened "}>
-                    <ul className='slide-nav-ul'>
+                    <ul className='slide-nav-ul' onClick={ menuBttnClick }>
                         <i className="fas fa-times close"></i>
                         <li><Link to='/'>home</Link></li>
                         <li><Link to='/about'>about</Link></li>
