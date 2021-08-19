@@ -1,6 +1,6 @@
 import Nav from './Nav'
 import Home from './pages/Home'
-import About from './About'
+import About from './pages/About'
 import Footer from './Footer'
 
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';

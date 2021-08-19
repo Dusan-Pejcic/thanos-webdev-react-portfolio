@@ -1,44 +1,42 @@
 .slide-nav-container {
-    /* background-color: white; */
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    
+  /* background-color: white; */
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
 .slide-nav-list-container {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    margin-left: -100vw;  
-    transition: .5s; 
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin-left: -100vw;
+  transition: 0.5s;
 }
 .menu-btn-container {
-    position: fixed;
-    z-index: 10;;
-    top: 28px;
-    right: 28px;
+  position: fixed;
+  z-index: 10;
+  top: 28px;
+  right: 28px;
 }
 .slide-nav-ul {
-    
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 40%;
-    list-style: none;;
-    a {
-        color: $pink;
-        text-decoration: none;
-        font-size: 64px;
-        transition: all .5s;
-        &:hover {
-            color: $purple;  
-        }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40%;
+  list-style: none;
+  a {
+    color: $pink;
+    text-decoration: none;
+    font-size: 64px;
+    transition: all 0.5s;
+    &:hover {
+      color: $purple;
     }
+  }
 }
 .slide-nav-opened {
-    margin-left: 0;
+  margin-left: 0;
 }

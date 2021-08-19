@@ -1,6 +1,8 @@
+import style from './About.module.scss';
+
 const About = () => {
     return ( 
-        <div className="about">
+        <div className={style.paragraph}>
             <p>here's the about page</p>
         </div>
      );
