@@ -9,7 +9,6 @@ const Nav = () => {
                 <div className="logo-container">
                     <img className="logo-elipses" src={logoElipses} alt=""/>
                     <p className="logo-text">Built by Thanos</p>
-                    {/* <i className="fas fa-bars hamburger"></i> */}
                 </div>
                 <NavList />
                 

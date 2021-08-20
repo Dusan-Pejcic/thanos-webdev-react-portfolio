@@ -6,7 +6,6 @@ const Button = (props) => {
     return ( 
         <div className="button">
            <Link to="/" className="button-text">{text}</Link> 
-            {/* <a className="button-text">{text}</a> */}
         </div>
      );
 }
