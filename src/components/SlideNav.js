@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const SlideNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,6 +7,11 @@ const SlideNav = () => {
   const menuBttnClick = () => {
     menuOpen ? setMenuOpen(false) : setMenuOpen(true);
   };
+
+  const linkClicked = () => {
+    setMenuOpen(false);
+    window.scrollTo(0, 0)
+  }
   return (
     <div className="slide-nav-container">
       <div
@@ -14,7 +19,7 @@ const SlideNav = () => {
           menuOpen ? "slide-nav-list-container slide-nav-opened": "slide-nav-list-container"
         }
       >
-        <ul className="slide-nav-ul" onClick={menuBttnClick}>
+        <ul className="slide-nav-ul" onClick={linkClicked}>
           <i className="fas fa-times close"></i>
           <li>
             <Link to="/">home</Link>
