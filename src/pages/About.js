@@ -1,9 +1,14 @@
+import AboutSection from '../sections/AboutSection';
+import AboutExperience from '../sections/AboutExperience';
+import AboutTechnologiesAndQualifications from '../sections/AboutTechnologiesAndQualifications';
 import style from './About.module.scss';
 
 const About = () => {
     return ( 
-        <div className={style.paragraph}>
-            <p>here's the about page</p>
+        <div className="container">
+            <AboutSection />
+            <AboutExperience />
+            <AboutTechnologiesAndQualifications />
         </div>
      );
 }

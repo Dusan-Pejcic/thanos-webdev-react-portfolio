@@ -1,139 +1,134 @@
 .main-nav {
-    width: 100vw;
-    background: transparent;
-    position: absolute;
-    z-index: 2;
-  }
-  .nav-and-logo-container {
-    width: 100vw;
+  width: 100vw;
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+}
+.nav-and-logo-container {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.logo-text {
+  font-family: "Amatic";
+  font-size: 24px;
+
+  position: relative;
+  left: 30px;
+  bottom: 10px;
+}
+.logo-elipses {
+  width: 70px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  z-index: -5;
+}
+.nav-ul {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-ul li {
+  margin-bottom: 40px;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  color: white;
+  font-family: $nav-font;
+  font-variant: small-caps;
+  font-size: 18px;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  margin-left: -100vw;
+  background-color: $dark;
+  transition: 0.4s;
+}
+
+.clicked {
+  margin-left: 0;
+}
+
+.fa-times {
+  color: white;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  .menu {
     position: relative;
-    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 100vw;
+    margin-left: 0;
+    background-color: transparent;
     align-items: center;
+    justify-content: flex-end;
+  }
+  .fa-times {
+    display: none;
   }
 
-  .logo-container {
-    width: 90vw;
+  .hamburger {
+    display: none;
+  }
+
+  .nav-and-logo-container {
+    width: 960px;
     margin: 0 auto;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
-    position: relative;
   }
-  .logo-text {
-    font-family: "Amatic";
-    font-size: 24px;
+  .logo-container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    position: relative;
-    left: 30px;
-    bottom: 10px;
+  .logo-text {
+    font-size: 38px;
   }
   .logo-elipses {
-    width: 70px;
-    position: absolute;
-    top: 0px;
-    left: -20px;
-    z-index: -5;
+    width: 140px;
+    top: 20px;
+    left: -70px;
   }
-  .nav-ul {
-    list-style: none;
-    margin: 0;
-  
-  }
-
-  .nav-ul li{
-    margin-bottom: 40px;
+  .nav-ul li {
+    margin-bottom: 0;
   }
 
   .nav-ul a {
-    text-decoration: none;
-    color: white;
-    font-family: $nav-font;
-    font-variant: small-caps;
-    font-size: 18px;
+    color: $dark;
+    margin-left: 20px;
   }
+}
 
-  .menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    margin-left: -100vw;
-    background-color: $dark;
-    transition: .4s;
+@media screen and (min-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
+  .nav-and-logo-container {
+    width: 1200px;
   }
-
-  .clicked {
-    margin-left: 0;
-  }
-
-  .fa-times {
-    color: white;
-  }
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-  @media screen 
-    and (min-device-width: 1200px) 
-    and (-webkit-min-device-pixel-ratio: 1) { 
-      .menu{
-        position: relative;
-        flex-direction: row; 
-        height: 5vh;
-        width: 100vw;
-        margin-left: 0;
-        background-color: transparent;
-        align-items: center;
-        justify-content: flex-end;
-      }
-      .fa-times {
-        display: none;
-      }
-      
-      .hamburger {
-        display: none;
-      }
-     
-      .nav-and-logo-container{
-        width: 960px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-      }
-      .logo-container {
-        width: 100vw;
-        display: flex;
-        justify-content:flex-start;
-    }
-
-    .logo-text {
-      font-size: 38px;
-    }
-    .logo-elipses {
-      width: 140px;
-      top: 20px;
-      left: -70px;
-    }
-      .nav-ul li{
-        margin-bottom: 0;
-      }
-
-      .nav-ul a{  
-        color: $dark;  
-        margin-left: 20px;
-      }
-  }
-
-  @media screen 
-    and (min-device-width: 1400px) 
-    and (-webkit-min-device-pixel-ratio: 1){
-      .nav-and-logo-container{
-        width: 1200px; 
-      }
-    }
+}
