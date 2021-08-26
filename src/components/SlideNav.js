@@ -8,10 +8,6 @@ const SlideNav = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  const linkClicked = () => {
-    setMenuOpen(false);
-    window.scrollTo(0, 0)
-  }
   return (
     <div className="slide-nav-container">
       <div
