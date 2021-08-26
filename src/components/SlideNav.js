@@ -4,8 +4,8 @@ import { useState } from "react";
 const SlideNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const menuBttnClick = () => {
-    menuOpen ? setMenuOpen(false) : setMenuOpen(true);
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
   };
 
   const linkClicked = () => {
@@ -19,7 +19,7 @@ const SlideNav = () => {
           menuOpen ? "slide-nav-list-container slide-nav-opened": "slide-nav-list-container"
         }
       >
-        <ul className="slide-nav-ul" onClick={linkClicked}>
+        <ul className="slide-nav-ul" onClick={toggleMenu}>
           <i className="fas fa-times close"></i>
           <li>
             <Link to="/">home</Link>
@@ -41,7 +41,7 @@ const SlideNav = () => {
       <div className="menu-btn-container">
         <div
           className={menuOpen ? "menu-btn open" : "menu-btn"}
-          onClick={menuBttnClick}
+          onClick={toggleMenu}
         >
           <div className="menu-btn__burger"></div>
         </div>
