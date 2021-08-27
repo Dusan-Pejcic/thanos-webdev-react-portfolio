@@ -1,18 +1,19 @@
-.slide-nav-container {
-  /* background-color: white; */
+/* .slide-nav-container {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   position: fixed;
   top: 0;
   z-index: 5;
-}
+} */
 .slide-nav-list-container {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
   background-color: white;
   margin-left: -100vw;
   transition: 0.5s;
+  z-index: 5;
 }
 .menu-btn-container {
   position: fixed;

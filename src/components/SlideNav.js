@@ -4,7 +4,7 @@ const SlideNav = (props) => {
 
 
   return (
-    <div className="slide-nav-container">
+    
       <div
         className={
           props.isOpen ? "slide-nav-list-container slide-nav-opened": "slide-nav-list-container"
@@ -29,7 +29,7 @@ const SlideNav = (props) => {
           </li>
         </ul>
       </div>
-    </div>
+    
   );
 };
 
