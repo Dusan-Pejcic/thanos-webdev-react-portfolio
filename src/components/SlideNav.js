@@ -1,21 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-const SlideNav = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const SlideNav = (props) => {
 
-  const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
 
   return (
     <div className="slide-nav-container">
       <div
         className={
-          menuOpen ? "slide-nav-list-container slide-nav-opened": "slide-nav-list-container"
+          props.isOpen ? "slide-nav-list-container slide-nav-opened": "slide-nav-list-container"
         }
       >
-        <ul className="slide-nav-ul" onClick={toggleMenu}>
+        <ul className="slide-nav-ul" onClick={props.toggler}>
           <i className="fas fa-times close"></i>
           <li>
             <Link to="/">home</Link>
@@ -33,14 +28,6 @@ const SlideNav = () => {
             <Link to="/">contact</Link>
           </li>
         </ul>
-      </div>
-      <div className="menu-btn-container">
-        <div
-          className={menuOpen ? "menu-btn open" : "menu-btn"}
-          onClick={toggleMenu}
-        >
-          <div className="menu-btn__burger"></div>
-        </div>
       </div>
     </div>
   );

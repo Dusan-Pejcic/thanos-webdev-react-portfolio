@@ -1,16 +1,27 @@
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { useState } from "react";
+
 import Nav from './Nav'
 import Home from './pages/Home'
 import About from './pages/About'
 import Footer from './Footer'
 
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import SlideNav from './components/SlideNav';
+import SlideNavBttn from './components/SlideNavBttn';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+    console.log('toggle');
+  };
+
   return (
     <Router>
       <div className="App">
-        <SlideNav  /> 
+        <SlideNav isOpen={menuOpen} toggler={toggleMenu} /> 
+        <SlideNavBttn  isOpen={menuOpen} toggler={toggleMenu}/> 
         <Nav />
           <main>
             <Switch>
